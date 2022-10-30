@@ -2,7 +2,7 @@
 Este es un material extraído del programa de capacitación Argentina Programa para el examen del módulo antes mencionado
 Este documento consta de 3 partes:
 * Fundamentos de la programación:
-    * Se desarrolla bajo el lenguaje de programación [Gobstones] (./gobstones.html)
+    * Se desarrolla bajo el lenguaje de programación [Gobstones](./gobstones.html)
 * Programación Imperativa:
     * Se desarrolla bajo el lenguaje de programación [Javascript](./javascript.html)
 * Programación Orientada a Objetos:
