@@ -1,0 +1,367 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Javascript</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Se Programar"/>
+
+
+
+  
+      <meta property="og:site_name" content="Base" />
+      <meta property="og:title" content="Sé Programar"/>
+      <meta property="og:description" content="Se Programar"/>
+      <meta property="og:type" content="website"/>
+           
+      <link rel="stylesheet" type="text/css" href="https://seprogramar.inti.gob.ar/inti/theme_stylesheet">
+    
+
+  
+</head>
+<body>
+
+<div class="container mb-5" id="wrap">
+  
+<h1>Apéndice</h1>
+
+<ul>
+
+<li><a title="" href="#referencia-rapida-del-lenguaje-javascript">Referencia rápida del lenguaje JavaScript</a>
+<ul>
+<li><a title="" href="#declaracion-de-funciones">Declaración de Funciones</a></li>
+<li><a title="" href="#operadores-matematicos">Operadores matemáticos</a></li>
+<li><a title="" href="#operadores-logicos">Operadores lógicos</a></li>
+<li><a title="" href="#comparaciones">Comparaciones</a></li>
+<li><a title="" href="#alternativa-condicional">Alternativa Condicional</a></li>
+<li><a title="" href="#variables">Variables</a></li>
+<li><a title="" href="#repeticion-indexada">Repetición indexada</a></li>
+</ul>
+<p></li></p>
+<p><li><a title="" href="#biblioteca-simplificada">Biblioteca simplificada</a>
+<ul>
+<li><a title="" href="#longitudunstring"><code>longitud(unString)</code></a></li>
+<li><a title="" href="#convertirenmayusculaunstring"><code>convertirEnMayuscula(unString)</code></a></li>
+<li><a title="" href="#comienzaconunstring-otrostring"><code>comienzaCon(unString, otroString)</code></a></li>
+<li><a title="" href="#imprimirunstring"><code>imprimir(unString)</code></a></li>
+<li><a title="" href="#tirardado"><code>tirarDado()</code></a></li>
+<li><a title="" href="#listasiguales"><code>listasIguales</code></a></li>
+<li><a title="" href="#longitudunalista"><code>longitud(unaLista)</code></a></li>
+<li><a title="" href="#agregarunalista-unelemento"><code>agregar(unaLista, unElemento)</code></a></li>
+<li><a title="" href="#removerunalista"><code>remover(unaLista, unElemento)</code></a></li>
+<li><a title="" href="#posicionunalista-unelemento"><code>posicion(unaLista, unElemento)</code></a></li>
+</ul>
+</li></p>
+<p><li><a title="" href="#bibliografia-complementaria">Bibliografía complementaria</a></p>
+<p></ul></p>
+
+<h2 id="referencia-rapida-del-lenguaje-javascript"> Referencia rápida del lenguaje JavaScript</h2>
+<p>El lenguaje JavaScript es utilizado ampliamente para construir software en todo el mundo, siendo una de las principales tecnologías de la Web. En este capítulo sólo usamos una muy pequeña parte del mismo, que listamos a continuación:</p>
+
+<h3 id="declaracion-de-funciones">Declaración de Funciones</h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-funciones-tipos-de-datos" target="_blank">Lección 1: Funciones y tipos de datos</a></p>
+</blockquote>
+<p>Las funciones en JavaScript se declaran mediante la <em>palabra clave</em> <code>function</code>, y su cuerpo va entre llaves <code>{</code> y <code>}</code>:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">nombreDeLaFuncion</span><span class="p">(</span><span class="nx">parametro1</span><span class="p">,</span> <span class="nx">parametro2</span><span class="p">,</span> <span class="nx">parametro3</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">...;</span>
+<span class="p">}</span>
+</code></pre></div><p>Toda función debe tener al menos un retorno, que se expresa mediante <code>return</code>.</p>
+
+<h3 id="operadores-matematicos">Operadores matemáticos</h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-funciones-tipos-de-datos" target="_blank">Lección 1: Funciones y tipos de datos</a></p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript"><code><span class="mi">4</span> <span class="o">+</span> <span class="mi">5</span>
+<span class="mi">10</span> <span class="o">-</span> <span class="mi">5</span>
+<span class="mi">8</span> <span class="o">*</span> <span class="mi">9</span>
+<span class="mi">10</span> <span class="o">/</span> <span class="mi">5</span>
+</code></pre></div>
+<h3 id="operadores-logicos">Operadores lógicos</h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-funciones-tipos-de-datos" target="_blank">Lección 1: Funciones y tipos de datos</a></p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript"><code><span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="kc">false</span>
+<span class="kc">true</span> <span class="o">||</span> <span class="kc">false</span>
+<span class="o">!</span> <span class="kc">false</span>
+</code></pre></div>
+<h3 id="comparaciones">Comparaciones</h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-funciones-tipos-de-datos" target="_blank">Lección 1: Funciones y tipos de datos</a></p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript"><code><span class="c1">// para cualquier tipo de dato</span>
+<span class="dl">"</span><span class="s2">hola</span><span class="dl">"</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">hola</span><span class="dl">"</span>
+<span class="dl">"</span><span class="s2">hola</span><span class="dl">"</span> <span class="o">!==</span> <span class="dl">"</span><span class="s2">chau</span><span class="dl">"</span>
+
+<span class="c1">// para números</span>
+<span class="mi">4</span> <span class="o">&gt;=</span> <span class="mi">5</span>
+<span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">5</span>
+<span class="mi">4</span> <span class="o">&lt;=</span> <span class="mi">5</span>
+<span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">5</span>
+</code></pre></div>
+<h3 id="alternativa-condicional">Alternativa Condicional</h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-funciones-tipos-de-datos" target="_blank">Lección 1: Funciones y tipos de datos</a></p>
+</blockquote>
+<p>Los <code>if</code>s en JavaScript encierran la condición entre paréntesis y su cuerpo entre llaves:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="k">if</span> <span class="p">(</span><span class="nx">hayPersonasEnEspera</span><span class="p">())</span> <span class="p">{</span>
+  <span class="nx">llamarSiguientePersona</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div><p>Además, los <code>if</code>s pueden opcionalmente tener un <code>else</code>:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="k">if</span> <span class="p">(</span><span class="nx">hayPersonasEnEspera</span><span class="p">())</span> <span class="p">{</span>
+  <span class="nx">llamarSiguientePersona</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">esperarSiguientePersona</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div><p>Por último, podemos combinar varios <code>if</code>s para tomar decisiones ante múltiples condiciones:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="k">if</span> <span class="p">(</span><span class="nx">hayPersonasEnEspera</span><span class="p">())</span> <span class="p">{</span>
+  <span class="nx">llamarSiguientePersona</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">elPuestoDebeSeguirAbierto</span><span class="p">())</span> <span class="p">{</span>
+  <span class="nx">esperarSiguientePersona</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">cerrarPuesto</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="variables">Variables</h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-variables-y-procedimientos" target="_blank">Lección 3: Variables y procedimientos</a></p>
+</blockquote>
+<p>Las variables nos permiten <em>recordar</em> valores y se declaran mediante la palabra reservada <code>let</code> y se les da un valor inicial usando <code>=</code>:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="kd">let</span> <span class="nx">pesosEnMiBilletera</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">diasQueFaltanParaElVerano</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</code></pre></div><p>La mismas se asignan mediante <code>=</code>:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">pesosEnMiBilletera</span> <span class="o">=</span> <span class="mi">65</span><span class="p">;</span>
+<span class="nx">diasQueFaltanParaElVerano</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+</code></pre></div><p>En ocasiones las asignaremos usando el valor anterior:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">pesosEnMiBilletera</span> <span class="o">=</span> <span class="nx">pesosEnMiBilletera</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nx">diasQueFaltanParaElVerano</span> <span class="o">=</span> <span class="nx">diasQueFaltanParaElVerano</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</code></pre></div><p>La asignación anterior se puede compactar combinando el signo <code>=</code> y la operación:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">pesosEnMiBilletera</span> <span class="o">*=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nx">diasQueFaltanParaElVerano</span> <span class="o">-=</span> <span class="mi">1</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="repeticion-indexada">Repetición indexada</h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-practica-de-listas-y-registros" target="_blank">Lección 7: Recorridos</a></p>
+</blockquote>
+<p>Las listas pueden ser <em>recorridas</em>, visitando y haciendo algo con cada uno de sus elementos. Para ello contamos con la estructura de control <code>for..of</code>, que encierra su generador
+entre paréntesis (<code>(</code> y <code>)</code>) y su cuerpo entre llaves (<code>{</code> y <code>}</code>):</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="kd">let</span> <span class="nx">patrimoniosDeLaHumanidad</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span><span class="na">declarado</span><span class="p">:</span> <span class="mi">1979</span><span class="p">,</span> <span class="na">nombre</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Parque nacional Tikal</span><span class="dl">"</span><span class="p">,</span> <span class="na">pais</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Guatemala</span><span class="dl">"</span><span class="p">},</span>
+  <span class="p">{</span><span class="na">declarado</span><span class="p">:</span> <span class="mi">1983</span><span class="p">,</span> <span class="na">nombre</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Santuario histórico de Machu Picchu</span><span class="dl">"</span><span class="p">,</span> <span class="na">pais</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Perú</span><span class="dl">"</span><span class="p">}</span>
+  <span class="p">{</span><span class="na">declarado</span><span class="p">:</span> <span class="mi">1986</span><span class="p">,</span> <span class="na">nombre</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Parque nacional do Iguaçu</span><span class="dl">"</span><span class="p">,</span> <span class="na">pais</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Brasil</span><span class="dl">"</span><span class="p">},</span>
+  <span class="p">{</span><span class="na">declarado</span><span class="p">:</span> <span class="mi">1995</span><span class="p">,</span> <span class="na">nombre</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Parque nacional de Rapa Nui</span><span class="dl">"</span><span class="p">,</span> <span class="na">pais</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Chile</span><span class="dl">"</span><span class="p">},</span>
+  <span class="p">{</span><span class="na">declarado</span><span class="p">:</span> <span class="mi">2003</span><span class="p">,</span> <span class="na">nombre</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Quebrada de Humahuaca</span><span class="dl">"</span><span class="p">,</span> <span class="na">pais</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Argentina</span><span class="dl">"</span><span class="p">}</span>
+<span class="p">]</span>
+
+
+<span class="kd">let</span> <span class="nx">cantidadPatrimoniosDeclaradosEnEsteSiglo</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">patrimonio</span> <span class="k">of</span> <span class="nx">patrimoniosDeLaHumanidad</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">patrimonio</span><span class="p">.</span><span class="nx">declarado</span> <span class="o">&gt;=</span> <span class="mi">2000</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">cantidadPatrimoniosDeclaradosEnEsteSiglo</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="biblioteca-simplificada"> Biblioteca simplificada</h2>
+<p>Utilizamos una biblioteca de funciones inspirada en la que ya viene con JavaScript,
+pero simplifiacada para que sea más sencilla y segura de usar. A continuación listamos las principales funciones que se
+pueden usar, indicando el equivalente <em>real</em> en JavaScript cuando corresponda.</p>
+<p><a id="longitudunstring"></a></p>
+
+<h3><code>longitud(unString)</code></h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-funciones-tipos-de-datos" target="_blank">Lección 1: Funciones y tipos de datos</a></p>
+<p>Versión simplificada de <a title="" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/length" target="_blank"><code>length</code></a></p>
+</blockquote>
+<p>Uso:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">></span> <span class="nx">longitud</span><span class="p">(</span><span class="dl">"</span><span class="s2">hola</span><span class="dl">"</span><span class="p">)</span>
+<span class="mi">4</span>
+</code></pre></div><p><a id="convertirenmayusculaunstring"></a></p>
+
+<h3><code>convertirEnMayuscula(unString)</code></h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-funciones-tipos-de-datos" target="_blank">Lección 1: Funciones y tipos de datos</a></p>
+<p>Versión simplificada de <a title="" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/toUpperCase" target="_blank"><code>toUpperCase</code></a></p>
+</blockquote>
+<p>Convierte un <code>unString</code> en mayúsculas:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">></span> <span class="nx">convertirEnMayuscula</span><span class="p">(</span><span class="dl">"</span><span class="s2">hola</span><span class="dl">"</span><span class="p">)</span>
+<span class="dl">"</span><span class="s2">HOLA</span><span class="dl">"</span>
+</code></pre></div><p><a id="comienzaconunstring-otrostring"></a></p>
+
+<h3><code>comienzaCon(unString, otroString)</code></h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-funciones-tipos-de-datos" target="_blank">Lección 1: Funciones y tipos de datos</a></p>
+<p>Versión simplificada de <a title="" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/startsWith" target="_blank"><code>startsWith</code></a></p>
+</blockquote>
+<p>Dice si <code>unString</code> empieza con <code>otroString</code>:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">></span> <span class="nx">comienzaCon</span><span class="p">(</span><span class="dl">"</span><span class="s2">aprendiendo a programar</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">aprendiendo</span><span class="dl">"</span><span class="p">)</span>
+<span class="kc">true</span>
+
+<span class="nx">></span> <span class="nx">comienzaCon</span><span class="p">(</span><span class="dl">"</span><span class="s2">aprendiendo a programar</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">aprend</span><span class="dl">"</span><span class="p">)</span>
+<span class="kc">true</span>
+
+<span class="nx">></span> <span class="nx">comienzaCon</span><span class="p">(</span><span class="dl">"</span><span class="s2">aprendiendo a programar</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">programar</span><span class="dl">"</span><span class="p">)</span>
+<span class="kc">false</span>
+
+<span class="nx">></span> <span class="nx">comienzaCon</span><span class="p">(</span><span class="dl">"</span><span class="s2">aprendiendo a programar</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">tomar el té</span><span class="dl">"</span><span class="p">)</span>
+<span class="kc">false</span>
+</code></pre></div><p><a id="imprimirunstring"></a></p>
+
+<h3><code>imprimir(unString)</code></h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-variables-y-procedimientos" target="_blank">Lección 3: Variables y procedimientos</a></p>
+<p>Versión simplificada de <a title="" href="https://developer.mozilla.org/es/docs/Web/API/Console/log" target="_blank"><code>console.log</code></a></p>
+</blockquote>
+<p>Imprime por pantalla <code>unString</code>:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">></span> <span class="nx">imprimir</span><span class="p">(</span><span class="dl">"</span><span class="s2">¡estoy imprimiendo!</span><span class="dl">"</span><span class="p">)</span>
+<span class="err">¡</span><span class="nx">estoy</span> <span class="nx">imprimiendo</span><span class="o">!</span>
+</code></pre></div><p><a id="tirardado"></a></p>
+
+<h3><code>tirarDado()</code></h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-variables-y-procedimientos" target="_blank">Lección 3: Variables y procedimientos</a></p>
+</blockquote>
+<p>Devuelve al azar un número entre 1 y 6:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">></span> <span class="nx">tirarDado</span><span class="p">()</span>
+<span class="mi">5</span>
+<span class="nx">></span> <span class="nx">tirarDado</span><span class="p">()</span>
+<span class="mi">1</span>
+<span class="nx">></span> <span class="nx">tirarDado</span><span class="p">()</span>
+<span class="mi">2</span>
+</code></pre></div><p><a id="listasiguales"></a></p>
+
+<h3><code>listasIguales(unaLista, otraLista)</code></h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-vectores" target="_blank">Lección 5: Listas</a></p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">></span> <span class="nx">listasIguales</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">7</span><span class="p">])</span>
+<span class="kc">true</span>
+
+<span class="nx">></span> <span class="nx">listasIguales</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">])</span>
+<span class="kc">false</span>
+</code></pre></div><p><a id="longitudunalista"></a></p>
+
+<h3><code>longitud(unaLista)</code></h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-vectores" target="_blank">Lección 5: Listas</a></p>
+
+<ul>
+<li><a title="" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/length" target="_blank"><code>length</code> de listas</a>
+</li></ul>
+</blockquote>
+<p>Nos dice cuan largo es <code>unaLista</code>:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">></span> <span class="nx">longitud</span><span class="p">([</span><span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">])</span>
+<span class="mi">4</span>
+<span class="nx">></span> <span class="nx">longitud</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="mi">3</span>
+</code></pre></div><p><a id="agregarunalista-unelemento"></a></p>
+
+<h3><code>agregar(unaLista, unElemento)</code></h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-vectores" target="_blank">Lección 5: Listas</a></p>
+<p>Versión simplificada de <a title="" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/push" target="_blank"><code>push</code></a></p>
+</blockquote>
+<p>Inserta <code>unElemento</code> al final de <code>unaLista</code>.
+Este es un procedimiento que no devuelve nada pero modifica a <code>unaLista</code>:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">></span> <span class="kd">let</span> <span class="nx">cancionesFavoritas</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">La colina de la vida</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Zamba por vos</span><span class="dl">"</span><span class="p">]</span>
+<span class="c1">// agrega el elemento "Seminare" a la lista  cancionesFavoritas</span>
+<span class="nx">></span> <span class="nx">agregar</span><span class="p">(</span><span class="nx">cancionesFavoritas</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Seminare</span><span class="dl">"</span><span class="p">)</span>
+<span class="c1">// ahora la lista tiene un elemento más:</span>
+<span class="nx">></span> <span class="nx">cancionesFavoritas</span>
+<span class="p">[</span><span class="dl">"</span><span class="s2">La colina de la vida</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Zamba por vos</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Seminare</span><span class="dl">"</span><span class="p">]</span>
+</code></pre></div><p><a id="removerunalista"></a></p>
+
+<h3><code>remover(unaLista, unElemento)</code></h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-vectores" target="_blank">Lección 5: Listas</a></p>
+</blockquote>
+<p>Quita <code>unElemento</code> de <code>unaLista</code>.
+Este es un procedimiento que no devuelve nada pero modifica a unaLista:</p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">></span> <span class="kd">let</span> <span class="nx">listaDeCompras</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">leche</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">pan</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">arroz</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">aceite</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">yerba</span><span class="dl">"</span><span class="p">]</span>
+<span class="c1">// removemos "pan"</span>
+<span class="nx">></span> <span class="nx">remove</span><span class="p">(</span><span class="nx">listaDeCompras</span><span class="p">,</span> <span class="dl">"</span><span class="s2">pan</span><span class="dl">"</span><span class="p">)</span>
+<span class="c1">// "pan" ya no está en lista de compras</span>
+<span class="nx">></span> <span class="nx">listaDeCompras</span>
+<span class="p">[</span><span class="dl">"</span><span class="s2">leche</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">arroz</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">aceite</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">yerba</span><span class="dl">"</span><span class="p">]</span>
+</code></pre></div><p><a id="posicionunalista-unelemento"></a></p>
+
+<h3><code>posicion(unaLista, unElemento)</code></h3>
+
+<blockquote>
+<p>A partir de la <a title="" href="../../guides/se-programar-inti/inti-guia-javascript-fundamentos-vectores" target="_blank">Lección 5: Listas</a></p>
+<p>Versión simplificada de <a title="" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/indexOf" target="_blank"><code>indexOf</code></a></p>
+</blockquote>
+<p>Nos dice en qué posición se encuentra <code>unElemento</code> dentro de <code>unaLista</code>.
+Si el elemento no está en la lista, devuelve <code>-1</code></p>
+<div class="highlight"><pre class="highlight javascript"><code><span class="nx">></span> <span class="kd">let</span> <span class="nx">premios</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">dani</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">agus</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">juli</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">fran</span><span class="dl">"</span><span class="p">]</span>
+<span class="nx">></span> <span class="nx">posicion</span><span class="p">(</span><span class="nx">premios</span><span class="p">,</span> <span class="dl">"</span><span class="s2">dani</span><span class="dl">"</span><span class="p">)</span>
+<span class="mi">0</span>
+<span class="nx">></span> <span class="nx">posicion</span><span class="p">(</span><span class="nx">premios</span><span class="p">,</span> <span class="dl">"</span><span class="s2">juli</span><span class="dl">"</span><span class="p">)</span>
+<span class="mi">2</span>
+<span class="nx">></span> <span class="nx">posicion</span><span class="p">(</span><span class="nx">premios</span><span class="p">,</span> <span class="dl">"</span><span class="s2">feli</span><span class="dl">"</span><span class="p">)</span>
+<span class="o">-</span><span class="mi">1</span>
+</code></pre></div>
+<h2 id="bibliografia-complementaria">Bibliografía complementaria</h2>
+
+<ul>
+<li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">https://developer.mozilla.org/es/docs/Web/JavaScript</a>
+</li><li><a href="https://es.javascript.info/">https://es.javascript.info/</a>
+</li></ul>
+
+
+</div>
+
+
+
+  <footer class="footer">
+    <div class="mu-footer container">
+      <div class="mu-footer-row">
+        <div class="mu-footer-authoring">
+          
+        </div>
+      </div>
+
+      <div class="mu-footer-row">
+        <div class="mu-footer-copyright">
+          &copy; 2015-2022 Ikumi SRL
+
+        </div>
+
+        <div class="mu-footer-terms">
+          <div><a target="_blank" href="/inti/faqs">Información importante</a></div>
+          <div><a target="_blank" href="/inti/user/terms">Términos y Condiciones</a></div>
+            <div><a target="_blank" href="/inti/discussions/terms">Reglas del Espacio de Consultas</a></div>
+        </div>
+
+        
+
+        <div id="footer-social" class="mu-footer-social" lang="en">
+          <a class="fab fa-youtube social-icon" aria-label="Youtube" href="https://www.youtube.com/channel/UCLiL8X_z48zkZlPJcXrtCQA" target="_blank"></a>
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+</body>
+</html>
+
+

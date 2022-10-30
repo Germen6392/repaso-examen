@@ -1,0 +1,350 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Gobstones</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Se Programar"/>
+
+
+
+  
+      <meta property="og:site_name" content="Base" />
+      <meta property="og:title" content="Sé Programar"/>
+      <meta property="og:description" content="Se Programar"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:image" content=""/>
+      <meta property="og:url" content="https://seprogramar.inti.gob.ar/inti/chapters/1-fundamentos/appendix"/> 
+      
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" data-turbolinks-track="reload">
+      <link rel="stylesheet" type="text/css" href="https://seprogramar.inti.gob.ar/inti/theme_stylesheet">
+      
+</head>
+<body>
+
+<div class="container mb-5" id="wrap">
+  
+<h1>Apéndice</h1>
+
+<ul>
+
+<li><a title="" href="#conceptos-generales">Conceptos generales</a>
+<ul>
+<li><a title="" href="#programa">Programa</a></li>
+<li><a title="" href="#sintaxis">Sintaxis</a></li>
+<li><a title="" href="#paradigma">Paradigma</a></li>
+<li><a title="" href="#lenguaje-de-programacion">Lenguaje de programación</a></li>
+<li><a title="" href="#computadora">Computadora</a></li>
+<li><a title="" href="#error">Error</a></li>
+</ul>
+<p></li></p>
+<p><li><a title="" href="#el-lenguaje-gobstones">El lenguaje Gobstones</a></p>
+<p><li><a title="" href="#el-entorno-de-gobstones">El entorno de Gobstones</a>
+<ul>
+<li><a title="" href="#tablero">Tablero</a></li>
+<li><a title="" href="#bolitas">Bolitas</a></li>
+<li><a title="" href="#cabezal">Cabezal</a></li>
+<li><a title="" href="#boom">Boom</a></li>
+<li><a title="" href="#palabras-reservadas">Palabras reservadas</a></li>
+</ul>
+</li></p>
+<p><li><a title="" href="#fundamentos-de-programacion">Fundamentos de programación</a>
+<ul>
+<li><a title="" href="#programas">Programas</a></li>
+<li><a title="" href="#procedimientos">Procedimientos</a></li>
+<li><a title="" href="#repeticion-simple">Repetición simple</a></li>
+<li><a title="" href="#parametros-y-argumentos">Parámetros y argumentos</a></li>
+<li><a title="" href="#alternativa-condicional">Alternativa condicional</a></li>
+<li><a title="" href="#funciones">Funciones</a></li>
+</ul>
+</li></p>
+<p><li><a title="" href="#procedimientos-primitivos">Procedimientos primitivos</a></p>
+<p><li><a title="" href="#funciones-primitivas">Funciones primitivas</a>
+</li>
+</ul>
+</li></p>
+<p><li><a title="" href="#bibliografia-complementaria">Bibliografía complementaria</a></li></p>
+
+<h2 id="conceptos-generales">Conceptos generales</h2>
+
+<h3 id="programa">Programa</h3>
+<p>Un programa es la descripción de la solución a un problema que puede ser ejecutada por una computadora. Está compuesto por la secuencia de instrucciones necesarias para que pueda lograr su cometido. Al ejecutar el programa la computadora llevará a cabo lo que le indiquen dichas instrucciones. El código fuente (o simplemente, código) es la forma en que escribimos estas instrucciones en un lenguaje de programación determinado.</p>
+
+<h3 id="sintaxis">Sintaxis</h3>
+<p>La sintaxis es el conjunto de reglas de escritura del lenguaje en el que estamos programando. </p>
+<p>Un programa que no cumpla con la sintaxis del lenguaje no va a poder ser “comprendido” por la computadora. Por ejemplo, la sintaxis establece cuándo usar mayúsculas o minúsculas, cuándo abrir y cerrar paréntesis, llaves o corchetes, qué palabras tienen un uso reservado, etc. </p>
+<p>Por otro lado, la semántica es el significado de las instrucciones que creamos respetando la sintaxis del lenguaje, lo que interpreta y puede hacer la computadora al ejecutar nuestro código.</p>
+
+<h3 id="paradigma">Paradigma</h3>
+<p>Un paradigma de programación es un conjunto de conceptos, estrategias y buenas prácticas que nos brindan un marco para resolver problemas de programación y comunicar su solución a otras personas. </p>
+
+<h3 id="lenguaje-de-programacion">Lenguaje de programación</h3>
+<p>Tal como los seres humanos nos comunicamos utilizando distintos lenguajes, para darle instrucciones a una computadora deberemos hacerlo utilizando algún lenguaje de programación. Hay muchos y cada uno tiene sus características, reglas sintácticas, convenciones y aplicaciones. Si bien cuando programamos podemos encontrar palabras en inglés u otros idiomas, los lenguajes de programación siguen reglas totalmente diferentes de las de aquellos. </p>
+<p>Algunos lenguajes sirven para cualquier tipo de problema (lenguajes de propósito general) y otros sirven para hacer cosas específicas. Por ejemplo:</p>
+
+<ul>
+<li><em>Gobstones</em> es un lenguaje destinado únicamente a enseñar los conceptos fundamentales de la programación;
+</li><li><em>JavaScript</em> es de propósito general y se puede usar en una gran variedad de contextos;
+</li><li><em>SQL</em> es un lenguaje que sólo sirve para expresar soluciones a problemas de manejo de información en una base de datos.
+</li></ul>
+
+<h3 id="computadora">Computadora</h3>
+<p>Una computadora es cualquier máquina capaz de almacenar y procesar información para ayudarnos a resolver problemas. Si bien solemos asociar el término al clásico aparato con una pantalla y un teclado, los teléfonos inteligentes (<em>smartphones</em>), televisores inteligentes (<em>smart TV</em>) y <em>tablets</em> también son computadoras que cumplen funciones más específicas.</p>
+
+<h3 id="error">Error</h3>
+<p>Equivocarse es una parte importante de aprender a programar, los errores pueden enseñarnos más sobre cómo plasmamos nuestras ideas en los programas y sobre las particularidades del lenguaje elegido. Entre los errores más comunes podemos encontrar:</p>
+
+<ul>
+<li>no respetar las reglas sintácticas del lenguaje de programación;
+</li><li>no resolver el problema para el cual estamos creando nuestro programa;
+</li><li>realizar operaciones que no están permitidas.
+</li></ul>
+
+<h2 id="el-lenguaje-gobstones">El lenguaje Gobstones</h2>
+<p>Gobstones es un lenguaje gráfico desarrollado por docentes e investigadores de la Universidad Nacional de Quilmes, diseñado para la enseñanza de ideas básicas de programación. </p>
+<p>Su representación visual facilita la ejercitación de la abstracción y la contextualización. Por eso es el lenguaje que elegimos para presentar los fundamentos de la programación.</p>
+
+<h2 id="el-entorno-de-gobstones">El entorno de Gobstones</h2>
+
+<h3 id="tablero">Tablero</h3>
+<p>El tablero es una cuadrícula compuesta por celdas. Las distintas tareas que hacen nuestros programas con las bolitas y el tablero nos permiten representar y resolver problemas muy variados. Podemos ver su estado antes y después de ejecutar un programa.</p>
+
+<h3 id="bolitas">Bolitas</h3>
+<p>Cada celda del tablero puede contener un número ilimitado de bolitas que pueden ser de cuatro colores diferentes: <code>Negro</code>, <code>Verde</code>, <code>Rojo</code> y <code>Azul</code>. Las herramientas que nos provee Gobstones para manipular las bolitas nos permiten lograr diferentes configuraciones del tablero para modelar situaciones y resolver problemas.</p>
+
+<h3 id="cabezal">Cabezal</h3>
+<p>El cabezal es un punto de referencia que se ubica en una celda determinada (la celda actual), y recibe y ejecuta las instrucciones que operan sobre el tablero y las bolitas, como ponerlas, sacarlas, contar cuántas hay y moverse desde su celda actual hacia otras del tablero.</p>
+
+<h3 id="boom">Boom</h3>
+<p>En Gobstones nos toparemos frecuentemente con el ¡Boom! Esta explosión es una representación gráfica para avisarnos que le estamos pidiendo a la computadora que haga algo que no puede resolver, por ejemplo cuando intentamos hacer movimientos fuera del tablero o sacar bolitas de una celda en la que no las hay.</p>
+
+<h3 id="palabras-reservadas">Palabras reservadas</h3>
+<p>Los lenguajes cuentan con palabras reservadas para fines específicos, eso significa que no podemos usarlas en cualquier situación. Algunos ejemplos de Gobstones son <code>program</code>, <code>procedure</code> y <code>function</code>.</p>
+
+<h2 id="fundamentos-de-programacion">Fundamentos de programación</h2>
+
+<h3 id="programas">Programas</h3>
+<p>Para crear un programa en Gobstones debemos escribir la palabra <code>program</code> en minúsculas y a continuación, entre llaves <code>{ }</code>, sus instrucciones. Los programas en Gobstones no llevan nombre. <code>program</code> es la palabra reservada de Gobstones para indicar el comienzo de un programa.</p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="kr">program</span><span class="w"> </span>{<span class="w">
+  </span><span class="nf">Mover</span>(<span class="l">Este</span>)<span class="w">
+  </span><span class="nf">Poner</span>(<span class="l">Azul</span>)<span class="w">
+</span>}<span class="w">
+</span></code></pre></div>
+<h3 id="procedimientos">Procedimientos</h3>
+<p>Los procedimientos son una herramienta de los lenguajes que nos permiten agrupar dentro de un bloque de código instrucciones que realizan una tarea específica, y darle un nombre. Nos ayudan a crear programas más claros, porque al utilizarlos organizamos mejor los pasos que resuelven un problema, describimos mejor nuestra estrategia y evitamos repetir lógica.</p>
+
+<h4>Nombre</h4> 
+<p>Todos los procedimientos llevan un nombre que explica la tarea que realiza. Es importante que sea un nombre <em>expresivo</em>, es decir, que deje claro lo que hace. De esa forma, cuando leemos su nombre podemos entender su objetivo a simple vista, sin necesidad de profundizar en cómo está hecho. </p>
+
+<h4>Subtareas</h4> 
+<p>Los procedimientos son una herramienta muy útil para organizar la resolución de un problema. Identificar y separar las partes que componen un problema nos permite resolver las pequeñas tareas que lo conforman y, al reunirlas, poder solucionarlo. Al utilizar procedimientos reconocemos esas tareas, les ponemos nombre y las resolvemos definiendo un nuevo procedimiento. De esta forma tenemos el procedimiento creado y a disposición para invocarlo todas las veces que sean necesarias. </p>
+
+<h4>Definición e invocaciones</h4> 
+<p>La definición de un procedimiento es la porción de código que desarrolla la tarea que resuelve. Esta definición no implica su uso, solo su existencia. Para definir un procedimiento debemos utilizar la palabra reservada <code>procedure</code> luego el nombre elegido en con la primera letra de cada palabra en mayúsculas (<em>DeEstaForma</em>) seguido por paréntesis <code>()</code>. Por último, entre llaves, las acciones y comandos que lo conforman. Por ejemplo:</p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="kr">procedure</span><span class="w"> </span><span class="nf">PonerUnaBolitaDeCadaColor</span>(){<span class="w">
+  </span><span class="nf">Poner</span>(<span class="l">Rojo</span>)<span class="w">
+  </span><span class="nf">Poner</span>(<span class="l">Verde</span>)<span class="w">
+  </span><span class="nf">Poner</span>(<span class="l">Azul</span>)<span class="w">
+  </span><span class="nf">Poner</span>(<span class="l">Negro</span>)<span class="w">
+</span>}<span class="w">
+</span></code></pre></div><p>En otras palabras, al definir un procedimiento estamos indicando las instrucciones precisas que ejecutará al ser invocado.</p>
+<p>Invocar un procedimiento es utilizarlo. Para hacerlo hay que escribir su nombre y los paréntesis dentro de un programa, función u otro procedimiento. Al ejecutar un programa que incluya la invocación a uno o varios procedimientos la computadora podrá ponerlos en acción. Por ejemplo, si quisieramos invocar el procedimiento <code>PonerUnaBolitaDeCadaColor</code> dentro de un programa deberíamos escribir:</p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="kr">program</span><span class="w"> </span>{<span class="w">
+  </span><span class="nf">PonerUnaBolitaDeCadaColor</span>()<span class="w">
+</span>}<span class="w">
+</span></code></pre></div><p>El procedimiento no tendrá ningún efecto hasta que no lo invoquemos en al menos un lugar.</p>
+
+<h3 id="repeticion-simple">Repetición simple</h3>
+<p>La repetición es una herramienta de programación que nos permite automatizar la repetición de alguna tarea indicando el número de veces consecutivas que deseamos hacerla.</p>
+<p>La palabra reservada para la repetición simple es <code>repeat</code>, y va seguida por el número de repeticiones entre paréntesis y los comandos a repetir entre llaves. Por ejemplo:</p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="kr">program</span>{<span class="w"> 
+    </span><span class="kr">repeat</span>(<span class="m">5</span>){<span class="w">
+        </span><span class="nf">Poner</span>(<span class="l">Azul</span>)<span class="w">
+    </span>}<span class="w">    
+</span>}<span class="w">
+</span></code></pre></div>
+<h4>Caso borde</h4>
+<p>Tenemos que prestar atención al orden en el que damos las instrucciones que reúne la repetición para garantizar que al comienzo y al final (o en los “bordes”) se comporte como esperamos. Si no consideramos los casos bordes en una repetición en la que combinamos acciones y movimientos en el tablero es muy probable que pasemos celdas sin completar la acción deseada o nos salgamos de los márgenes del tablero. Una buena estrategia para evitarlo es considerar el último caso por fuera de la repetición.</p>
+<p>Por ejemplo, queremos colocar una bolita azul en cada celda de este tablero:</p>
+<p><img src="./images-gobstones/tablero-inicial-caso-borde.png" width="300"/></p>
+<p>Si intentamos repetir la acción de <code>Poner(Azul)</code> y <code>Mover(Este)</code> cuatro veces, en el último paso vamos a estar fuera de los márgenes del tablero y las instrucciones no serán válidas. Si, en cambio, repetimos esas acciones tres veces no colocaremos una bolita azul en la última celda.
+La solución es hacer tres repeticiones y por fuera de su estructura nos encargamos de poner la bolita en la última celda:</p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="kr">program</span>{<span class="w"> 
+    </span><span class="kr">repeat</span>(<span class="m">3</span>){<span class="w">
+        </span><span class="nf">Poner</span>(<span class="l">Azul</span>)<span class="w">
+        </span><span class="nf">Mover</span>(<span class="l">Este</span>)<span class="w">
+    </span>}<span class="w">  
+    </span><span class="nf">Poner</span>(<span class="l">Azul</span>)<span class="w">  
+</span>}<span class="w">
+</span></code></pre></div><p>De esa forma el tablero obtenido será este:</p>
+<p><img src="./images-gobstones/tablero-final-caso-borde.png" width="300"/></p>
+
+<h3 id="parametros-y-argumentos">Parámetros y argumentos</h3>
+<p>Cuando queremos generalizar el comportamiento de un procedimiento para que se adecúe a distintas situaciones de uso similares, podemos utilizar parámetros.
+Los parámetros no tienen un valor determinado en el momento de la definición del procedimiento, pero pueden tomar potencialmente cualquier valor (siempre que tenga sentido). El parámetro es un &quot;agujero&quot; que debemos completar con la información particular que necesitemos al invocar el procedimiento.</p>
+<p>Al definir el procedimiento incluiremos entre paréntesis el parámetro (o parámetros) con un nombre descriptivo en minúsculas. Por ejemplo:</p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="c1">// Este procedimiento nos permitirá movernos dos celdas en cualquier dirección.</span><span class="w">
+</span><span class="kr">procedure</span><span class="w"> </span><span class="nf">Mover2PasosHaciaEl</span>(<span class="nv">direcci</span><span class="err">ó</span><span class="nv">n</span>)<span class="w"> </span>{<span class="w">
+    </span><span class="nf">Mover</span>(<span class="nv">direcci</span><span class="err">ó</span><span class="nv">n</span>)<span class="w">
+    </span><span class="nf">Mover</span>(<span class="nv">direcci</span><span class="err">ó</span><span class="nv">n</span>)<span class="w">
+</span>}<span class="w">
+</span></code></pre></div><p>Al invocar el procedimiento tendremos que pasarle un argumento en la misma posición que el parámetro correspondiente. Cada argumento es el valor específico que reemplazará al parámetro que le corresponda en cada una de sus apariciones dentro de la definición de la función o procedimiento invocado.</p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="c1">// Al invocar el procedimiento podemos elegir hacia qué dirección queremos movernos. Por ejemplo, si quisiéramos un programa que nos permita movernos dos celdas al Oeste deberíamos hacer:</span><span class="w">
+</span><span class="kr">program</span><span class="w"> </span>{<span class="w">
+    </span><span class="nf">Mover2PasosHaciaEl</span>(<span class="l">Oeste</span>)<span class="w">
+</span>}<span class="w">
+</span></code></pre></div>
+<h3 id="alternativa-condicional">Alternativa condicional</h3>
+<p>Cuando un problema presenta escenarios que pueden variar necesitamos algún tipo de herramienta para evaluar el contexto y tomar decisiones. La alternativa condicional se ocupa precisamente de esto. ¿Cómo lo hace? Primero evalúa el valor de verdad de una expresión booleana, que actúa de condición y según se cumpla o no, realiza una acción determinada. Por ejemplo, tenemos que decidir qué hacer según la cantidad de bolitas de una celda, si un número es mayor que otro o si llegué a un extremo del tablero.</p>
+<p>La alternativa condicional se compone de una estructura de control que utiliza la palabra <code>if</code> (que significa “si” en inglés). Se escribe <code>if</code>, la condición y entre llaves las acciones que se deben realizar si la condición se cumple. Si la condición no es verdadera no se van a ejecutar las instrucciones entre las llaves, sino que el programa seguirá su curso normal con los comandos fuera de éstas.</p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="kr">program</span><span class="w"> </span>{<span class="w">
+    </span><span class="kr">if</span>(<span class="nf">hayBolitas</span>(<span class="l">Azul</span>))<span class="w"> </span>{<span class="w">
+        </span><span class="nf">Sacar</span>(<span class="l">Azul</span>)<span class="w">
+    </span>}<span class="w"> </span><span class="c1">// en este caso si hay al menos una bolita azul va a sacar una.</span><span class="w">
+</span>}<span class="w">
+</span></code></pre></div><p>Si queremos hacer una acción específica cuando no se cumple la condición del <code>if</code> (y solo en ese caso), podemos utilizar la sentencia <code>else</code> (si no en inglés).</p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="kr">program</span><span class="w"> </span>{<span class="w">
+    </span><span class="kr">if</span>(<span class="nf">hayBolitas</span>(<span class="l">Azul</span>))<span class="w"> </span>{<span class="w">
+        </span><span class="nf">Sacar</span>(<span class="l">Azul</span>)<span class="w">
+    </span>}<span class="w"> </span><span class="kr">else</span><span class="w"> </span>{<span class="w">
+        </span><span class="nf">Poner</span>(<span class="l">Azul</span>)<span class="w">
+    </span>}<span class="w"> </span><span class="c1">// en este caso si hay al menos una bolita azul va a sacar una. Si no hay ninguna bolita azul va a poner una.</span><span class="w">
+</span>}<span class="w">
+</span></code></pre></div>
+<h3 id="funciones">Funciones</h3>
+<p>Al igual que los procedimientos, las funciones nos permiten dividir el problema en subtareas para evitar repeticiones y hacer más fácil de entender la solución. La diferencia entre ambos es que las funciones no describen acciones sino que encapsulan expresiones, realizan algún tipo de procesamiento con información de su contexto y devuelven un resultado, sin ningún efecto real sobre el tablero. Lo que retorne la función debería ir entre paréntesis a continuación de la palabra <code>return</code>. </p>
+<p>La definición e invocación de funciones también debe tener un nombre claro y descriptivo que indique con precisión qué hace y cuál será el resultado que nos retornará esa función. A diferencia de los procedimientos, las funciones se definen utilizando la palabra <code>function</code> y su nombre con la primera letra de cada palabra en mayúsculas a excepción de la primera (<em>deEstaForma</em>). Por ejemplo:</p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="kr">function</span><span class="w"> </span><span class="nf">nroBolitasTotal</span>()<span class="w"> </span>{<span class="w">
+    </span><span class="kr">return</span><span class="w"> </span>(<span class="nf">nroBolitas</span>(<span class="l">Azul</span>)<span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">nroBolitas</span>(<span class="l">Negro</span>)<span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">nroBolitas</span>(<span class="l">Rojo</span>)<span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">nroBolitas</span>(<span class="l">Verde</span>))<span class="w">
+</span>}<span class="w">
+</span></code></pre></div>
+<h2 id="procedimientos-primitivos">Procedimientos primitivos</h2>
+<p><a id="ponercolor"></a></p>
+
+<h3><code>Poner(color)</code></h3>
+<p>Pone una bolita del color indicado en la casilla actual. Ejemplo: </p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="kr">program</span><span class="w"> </span>{<span class="w">
+    </span><span class="nf">Poner</span>(<span class="l">Rojo</span>)<span class="w"> </span><span class="c1">// pone una bolita roja en la casilla actual.</span><span class="w">
+</span>}<span class="w">
+</span></code></pre></div><p><a id="sacarcolor"></a></p>
+
+<h3><code>Sacar(color)</code></h3>
+<p>Saca una bolita del color indicado de la casilla actual. Ejemplo: </p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="kr">program</span><span class="w"> </span>{<span class="w">
+    </span><span class="nf">Sacar</span>(<span class="l">Negro</span>)<span class="w"> </span><span class="c1">// saca una bolita negra de las que hay en la casilla actual.</span><span class="w">
+</span>}<span class="w">
+</span></code></pre></div><p><a id="moverdireccion"></a></p>
+
+<h3><code>Mover(direccion)</code></h3>
+<p>Mueve el cabezal indicador de la casilla actual un paso hacia la dirección indicada. Ejemplo: </p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="kr">program</span><span class="w"> </span>{<span class="w">
+    </span><span class="nf">Mover</span>(<span class="l">Este</span>)<span class="w"> </span><span class="c1">// mueve el cabezal una vez hacia el Este.</span><span class="w">
+</span>}<span class="w">
+</span></code></pre></div><p><a id="iralbordedireccion"></a></p>
+
+<h3><code>IrAlBorde(direccion)</code></h3>
+<p>Lleva el cabezal todo lo que se puede hacia la dirección indicada. Ejemplo: </p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="kr">program</span><span class="w"> </span>{<span class="w">
+    </span><span class="nf">IrAlBorde</span>(<span class="l">Norte</span>)<span class="w"> </span><span class="c1">// mueve el cabezal de la celda actual a la última celda en la dirección Norte.</span><span class="w">
+</span>}<span class="w">
+</span></code></pre></div><p><a id="vaciartablero"></a></p>
+
+<h3><code>VaciarTablero()</code></h3>
+<p>Saca todas las bolitas del tablero, dejando el cabezal en la posición en la que estaba. Ejemplo: </p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="kr">program</span><span class="w"> </span>{<span class="w">
+    </span><span class="nf">VaciarTablero</span>()<span class="w"> </span><span class="c1">// En un tablero con alguna o muchas bolitas, las saca todas.</span><span class="w">
+</span>}<span class="w">
+</span></code></pre></div>
+<h2 id="funciones-primitivas">Funciones primitivas</h2>
+<p><a id="nrobolitascolor"></a></p>
+
+<h3><code>nroBolitas(color)</code></h3>
+<p>Retorna un número: la cantidad de bolitas del color indicado que hay en la casilla actual. Ejemplo, asumiendo la siguiende celda actual: </p>
+<p><img src="./images-gobstones/casillero-con-bolitas.png" width="100"/></p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="nf">nroBolitas</span>(<span class="l">Rojo</span>)<span class="w"> </span><span class="c1">// retorna 4</span><span class="w">
+</span></code></pre></div><p><a id="opuestodireccion"></a></p>
+
+<h3><code>opuesto(direccion)</code></h3>
+<p>Retorna una dirección: la dirección opuesta a la provista. Ejemplo:</p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="nf">opuesto</span>(<span class="l">Norte</span>)<span class="w"> </span><span class="c1">// retorna Sur</span><span class="w">
+</span></code></pre></div><p><a id="opuestonumero"></a></p>
+
+<h3><code>opuesto(numero)</code></h3>
+<p>Retorna un número: el original, negado. Ejemplo: </p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="nf">opuesto</span>(<span class="m">59</span>)<span class="w"> </span><span class="c1">// Retorna -59</span><span class="w">
+</span></code></pre></div><p><a id="siguientedireccion"></a></p>
+
+<h3><code>siguiente(direccion)</code></h3>
+<p>Retorna una dirección: la siguiente a la recibida como argumento, es decir, la próxima en sentido horario. Ejemplo: </p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="nf">siguiente</span>(<span class="l">Oeste</span>)<span class="w"> </span><span class="c1">// retorna Norte</span><span class="w">
+</span><span class="nf">siguiente</span>(<span class="l">Norte</span>)<span class="w"> </span><span class="c1">// retorna Este</span><span class="w">
+</span><span class="nf">siguiente</span>(<span class="l">Este</span>)<span class="w">  </span><span class="c1">// retorna Sur</span><span class="w">
+</span><span class="nf">siguiente</span>(<span class="l">Sur</span>)<span class="w">   </span><span class="c1">// retorna Oeste</span><span class="w">
+</span></code></pre></div><p><a id="previodireccion"></a></p>
+
+<h3><code>previo(direccion)</code></h3>
+<p>Retorna una dirección: la anterior a la recibida como argumento, es decir, la próxima en sentido anti horario. Ejemplo: </p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="nf">previo</span>(<span class="l">Sur</span>)<span class="w"> </span><span class="c1">// retorna Este</span><span class="w">
+</span></code></pre></div><p><a id="haybolitascolor"></a></p>
+
+<h3><code>hayBolitas(color)</code></h3>
+<p>Retorna un booleano: es verdadero cuando en la casilla actual hay al menos una bolita del valor indicado. Ejemplo, asumiendo la siguiende celda actual: </p>
+<p><img src="./images-gobstones/casillero-con-bolitas.png" width="100"/></p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="nf">hayBolitas</span>(<span class="l">Rojo</span>)<span class="w"> </span><span class="c1">// retorna verdadero</span><span class="w">
+</span><span class="nf">hayBolitas</span>(<span class="l">Verde</span>)<span class="w"> </span><span class="c1">// retorna falso</span><span class="w">
+</span></code></pre></div><p><a id="puedemoverdireccion"></a></p>
+
+<h3><code>puedeMover(direccion)</code></h3>
+<p>Retorna un booleano: es verdadero cuando el cabezal puede moverse en esa dirección (o sea, no está en el borde). Por ejemplo, estando el cabezal en la esquina de abajo a la izquierda: </p>
+<p><img src="./images-gobstones/casillero-puede-mover.png" width="165" /></p>
+<div class="highlight"><pre class="highlight gobstones"><code><span class="nf">puedeMover</span>(<span class="l">Norte</span>)<span class="w"> </span><span class="c1">// retorna verdadero</span><span class="w">
+</span><span class="nf">puedeMover</span>(<span class="l">Oeste</span>)<span class="w"> </span><span class="c1">// retorna falso</span><span class="w">
+</span></code></pre></div>
+<h2 id="bibliografia-complementaria">Bibliografía complementaria</h2>
+
+<ul>
+<li><a href="http://www.gobstones.org/bibliografia/Libros/BasesConceptualesProg.pdf">http://www.gobstones.org/bibliografia/Libros/BasesConceptualesProg.pdf</a>
+</li></ul>
+
+
+</div>
+
+
+
+  <footer class="footer">
+    <div class="mu-footer container">
+      <div class="mu-footer-row">
+        <div class="mu-footer-authoring">
+          
+        </div>
+      </div>
+
+      <div class="mu-footer-row">
+        <div class="mu-footer-copyright">
+          &copy; 2015-2022 Ikumi SRL
+
+        </div>
+
+        <div class="mu-footer-terms">
+          <div><a target="_blank" href="/inti/faqs">Información importante</a></div>
+          <div><a target="_blank" href="/inti/user/terms">Términos y Condiciones</a></div>
+            <div><a target="_blank" href="/inti/discussions/terms">Reglas del Espacio de Consultas</a></div>
+        </div>
+
+        
+
+        <div id="footer-social" class="mu-footer-social" lang="en">
+          <a class="fab fa-youtube social-icon" aria-label="Youtube" href="https://www.youtube.com/channel/UCLiL8X_z48zkZlPJcXrtCQA" target="_blank"></a>
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+</body>
+</html>
+
+
